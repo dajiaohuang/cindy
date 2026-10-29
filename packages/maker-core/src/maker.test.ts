@@ -2331,7 +2331,7 @@ describe('Maker Pi runtime skill status', () => {
         commands: [{
           name: 'skill:learn',
           source: 'skill',
-          sourceInfo: { scope: 'user', path: learnPath },
+          sourceInfo: { path: learnPath },
         }],
       });
       return handle;

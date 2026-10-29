@@ -344,8 +344,7 @@ async function mergePiRuntimeSkillStatuses(
     const baseDir = command.sourceInfo.baseDir;
     if (command.source !== 'skill') continue;
     if (
-      command.sourceInfo.scope === 'user'
-      && typeof command.sourceInfo.path === 'string'
+      typeof command.sourceInfo.path === 'string'
       && /^(?:skill|cindy):/.test(command.name)
     ) {
       // Main-owned built-ins such as Learn live in Pi's user scope. Attribute
